@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+
+}
+
+
+.container{
+    height:70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.game{
+    height: 60vmin;
+    width: 60vmin ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.1em;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height:18vmin;
+    width:18vmin ;
+    border-radius: 1rem;
+    border: none;
+    background-color: #fcbf49;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 8vmin;
+    color: #023047;
+    font-weight:bold;
+}
+
+.box:hover {
+    height: 18.5vmin;
+    width: 18.5vmin;
+    transition: all 0.3s ease; /* Add transition for all properties over 0.3 seconds with ease timing function */
+    border-radius: 1rem;
+    border: 0.3rem solid #ffffff; /* Add border style */
+    background-color: #fcbf49; /* Original color */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    font-size: 8vmin;
+    color: #023047;
+    font-weight: bold;
+    border-color: #e6f8eb;
+}
+
+
+
+
+.main-box{
+    padding: 2rem;
+}
+
+.main-box h1{
+    color: #ffffff;
+    font-size: 8vmin;
+    margin-top: 1rem;
+}
+
+.msg-content{
+    padding: 8rem;
+}
+
+.msg-content h3{
+    color: #fa9075;
+    font-size: 4vmin;
+}
+
+#reset-btn{
+    padding:1rem;
+    width: 20vmin;
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius:3rem;
+    border:none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 3vmin;
+    font-weight:bolder;
+}
+
+
+#new-game{
+    margin-top: 1rem;
+    padding:1rem;
+    width: 15vmin;
+    background-color: #f4a261;
+    border-radius:3rem;
+    border:none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 2vmin;
+    
+    
+    font-weight:bolder;
+}
+
+.msg-container {
+    position: fixed;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    width:94vmin;
+    height:42vmin;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Ensure it's above other content */
+    align-items: center;
+    justify-content: center;
+}
+
+.hide{
+    display:none;
+}
+
